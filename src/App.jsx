@@ -56,7 +56,7 @@ function App() {
           <div
             key={index}
             className={`flex justify-${
-              message.role === "user" ? "start" : "end"
+              message.role === "user" ? "end" : "start"
             } mt-2 ${message.role === "user" ? "ml-2" : "mr-2"}`}
           >
             <div
