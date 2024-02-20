@@ -42,13 +42,13 @@ function App() {
   };
 
   return (
-    <div className="bg-gray-900 text-gray-100 h-screen flex flex-col dark:bg-gray-800 dark:text-gray-50">
-      <div className="flex-1 overflow-y-scroll">
-        <div className="flex justify-center">
+    <div className="bg-gray-900 text-gray-100 h-screen flex flex-col">
+      <div className="flex-1 overflow-y-scroll ">
+        <div className="flex justify-center ">
           <img src="Lumipedia.svg" alt="logo" className=" w-96 h-auto" />
         </div>
-        <div className="flex justify-start mt-2 ml-3">
-          <div className="bg-green-700 rounded-lg px-4 py-2 text-white max-w-sm ml-3">
+        <div className="flex justify-center">
+          <div className="bg-green-700 rounded-lg px-4 py-2 text-white max-w-sm">
             Hi there! I'm a LumiGPT chatbot. Ask me anything!
           </div>
         </div>
@@ -56,15 +56,15 @@ function App() {
           <div
             key={index}
             className={`flex justify-${
-              message.role === "user" ? "end" : "start"
-            } mt-2 ${message.role === "user" ? "ml-3" : "mr-3"}`}
+              message.role === "user" ? "center" : "center"
+            }`}
           >
             <div
               className={`bg-${
                 message.role === "user" ? "blue-600" : "green-700"
-              } rounded-lg px-4 py-2 text-white max-w-sm`}
+              } rounded-lg px-4 py-2 text-white max-w-md mt-3 mb-3 `}
             >
-              <strong>{message.role === "user" ? "You" : "LumiGPT"}:</strong>{" "}
+              <strong>{message.role === "user" ? "You" : "LumiGPT"}{" "}:</strong>{" "}
               {message.content}
             </div>
           </div>
