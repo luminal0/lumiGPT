@@ -47,8 +47,8 @@ function App() {
         <div className="flex justify-center">
           <img src="Lumipedia.svg" alt="logo" className=" w-96 h-auto" />
         </div>
-        <div className="flex justify-end mt-2 mr-2">
-          <div className="bg-green-700 rounded-lg px-4 py-2 text-white max-w-sm ml-2">
+        <div className="flex justify-start mt-2 ml-3">
+          <div className="bg-green-700 rounded-lg px-4 py-2 text-white max-w-sm ml-3">
             Hi there! I'm a LumiGPT chatbot. Ask me anything!
           </div>
         </div>
@@ -57,7 +57,7 @@ function App() {
             key={index}
             className={`flex justify-${
               message.role === "user" ? "end" : "start"
-            } mt-2 ${message.role === "user" ? "ml-2" : "mr-2"}`}
+            } mt-2 ${message.role === "user" ? "ml-3" : "mr-3"}`}
           >
             <div
               className={`bg-${
